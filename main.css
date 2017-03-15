@@ -1,11 +1,81 @@
+/*
+Header ================
+*/
+
+header{
+  background-image: url(images/header.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.main-title{
+  color: hsl(100, 100%, 100%);
+  text-align: center;
+  font-size: 5rem;
+}
+
+/*
+Main Content ================
+*/
+
+body{
+  width: 1000px;
+  margin: 0 auto;
+}
+
 h1 {
   color: #083452;
+  text-transform: uppercase;
 }
 
 h2{
-  color: ##106db3;
+  color: #106db3;
+  text-transform: uppercase;
 }
 
+h5{
+  color: #083452;
+  text-align: center;
+}
+
+
+.inline li{
+  height: auto;
+  width: 25%;
+
+}
+
+.inline{
+  display: flex;
+}
+
+.inline li a{
+  color: red;
+}
+
+.inner{
+  position: absolute;
+  left: 0px;
+  bottom: 0px
+}
+
+/*main-image{
+
+}*/
+
+/*.photo-bar{
+  height: 400px;
+  width: 200px;
+  display: inline-block;
+}*/
+
+/*
+Side Bar ================
+*/
+
+/*
+Footer ================
+*/
 footer{
   background-color: #083452;
   color: #95a8b5;
@@ -23,8 +93,5 @@ footer nav a{
 
 ul{
   list-style: none;
-}
-
-main image{
-
+  display: inline-block;
 }
