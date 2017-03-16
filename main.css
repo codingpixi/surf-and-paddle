@@ -11,47 +11,208 @@ header{
 .main-title{
   color: hsl(100, 100%, 100%);
   text-align: center;
-  font-size: 5rem;
+  /*font-size: 2.5rem;*/
+}
+
+.sub-title {
+  text-align: center;
+}
+
+/*
+Content for All ================
+*/
+
+body{
+  width: 1000px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+  color: #083452;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+h2{
+  color: #106db3;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+h5{
+  color: #083452;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+ul{
+  list-style: none;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
 }
 
 /*
 Main Content ================
 */
 
-body{
-  width: 1000px;
+.container{
+  display: flex;
+  width: 80%;
+  background: white;
   margin: 0 auto;
 }
 
-h1 {
-  color: #083452;
-  text-transform: uppercase;
+.blog {
+  height: auto;
+  width: 60%
+  margin: /*1.5rem*/0 10px;
+  /*background: white;
+  /*font-size: 1.2rem;*/
 }
 
-h2{
-  color: #106db3;
-  text-transform: uppercase;
+.blog img {
+  height: 30px;
+  width: 30px;
 }
 
-h5{
+.blog .anne {
   color: #083452;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.small {
+  justify-content: flex-start;
+}
+
+blockquote{
+  color: #083452;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  border-left: 2px solid #eaeaea;
+  padding-left: 10px;
+  margin-left: -10px;
+}
+
+.connect {
+  margin: 0 auto;
+  height: 10px;
+  width: 400px;
+
+}
+
+.connect a:hoover {
+  color: white;
+  background-color: green;
+
+}
+
+.connect img {
+  height: 18px;
+  width: 18px;
+  background: black;
+  /*margin: 0.5rem;*/
+}
+
+/*
+aside ================
+*/
+
+.aside{
+  height: auto;
+  width: 40%;
+  background: white;
+  margin: /*1rem*/10px auto;
+  /*font-size: 1.2rem;*/
+}
+
+.contact{
+  margin: 0px auto;
   text-align: center;
 }
 
+.aside .anne {
+  color: #083452;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
 
-.inline li{
+.aside ul{
+  margin: 0;
+  overflow: hidden;
+  /*list-style: none;
+  padding: 0; - removed because it in the main ul
+  display: inline-block;
+  padding-left: 0;
+  display: block;
+  padding-left: 0;*/
+}
+
+.aside li{
+  float: left;
+  font-size: .9rem;
+}
+
+.aside a{
+  color: gray;
+  margin: 6px;
+}
+
+/*.inline li{
   height: auto;
   width: 25%;
+}*/
 
+
+/*
+PHOTO STREAM ================
+*/
+
+.stream /*post*/ ul li{
+  display: inline-block;
+  width: 24.5%;
+  position: relative;
+  background: #63a0cc;
 }
 
-.inline{
-  display: flex;
+.stream /*post*/ ul li img{
+  width: 100%;
 }
 
-.inline li a{
+.stream /*post*/ a{
+  /*padding: 1em;*/
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  position: relative; bottom: 10px;
+  /*top: 20px;
+  left: 0px;*/
+  width: 100%;
+}
+
+/*.stream /*post img {
+  opacity: .25;
+}*/
+
+
+/*.post li a{
   color: red;
 }
+
+.post li img{
+  width: 100%;
+  /*background-color: #083452;*/
+}*/
 
 .inner{
   position: absolute;
@@ -70,28 +231,42 @@ h5{
 }*/
 
 /*
-Side Bar ================
-*/
-
-/*
 Footer ================
 */
 footer{
   background-color: #083452;
   color: #95a8b5;
   border-radius: 0px 0px 10px 10px;
-  padding: 30px 25px;
+  height: 125px;
+  overflow: hidden;
+  /*padding: 30px 25px;*/
 }
 
 .footer-logo {
   margin-left: 60px;
 }
 
-footer nav a{
+/*footer nav a{
   color: #95a8b5;
+}*/
+
+footer li {
+  display: inline-block;
+  width: 24.5%;
 }
 
-ul{
-  list-style: none;
-  display: inline-block;
+footer li img{
+  width: 100%;
+  background-color: #083452;
+}
+
+/*footer a:hoover {
+  background-color: #083452;
+}
+NOT WORKING YET...JUST AN IDEA*/
+
+footer ul {
+  /*list-style: none;
+  display: inline-block;*/
+  padding: 0;
 }
